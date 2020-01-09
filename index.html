@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="nss.css">
+</head>
+<style>
+    .row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 768px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<body>
+
+  <div class="header">
+    <ul class="header">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="activities.html">New Activities</a></li>
+      <li><a href="book.html">Book Online</a></li>
+      <li><a href="events.html">Events</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+       <!-- Portfolio Gallery Grid -->
+<div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="https://via.placeholder.com/150" alt="Mountains" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="https://via.placeholder.com/150" alt="Lights" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="https://via.placeholder.com/150" alt="Nature" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="https://via.placeholder.com/150" alt="Mountains" style="width:100%">
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div> 
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <video width="320" height="240" autoplay controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="card">
+        <h3>Media Covergae</h3>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div>
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+
+</body>
+
+</html>
